@@ -1,3 +1,5 @@
+document.body.style.backgroundImage="url('images/background.gif')";
+
 const weatherApi = {
     key: "83ad9a96715fb354fd8c3f8cd282e3ca",
     baseUrl: "https://api.openweathermap.org/data/2.5/weather", 
