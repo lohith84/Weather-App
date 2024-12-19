@@ -6,6 +6,7 @@ const weatherApi = {
 }
 
 const card=document.getElementById('search-bar');
+const button = document.getElementById('search-button');
 
 card.addEventListener('keypress',(event)=>{
     if(event.keyCode == 13) 
@@ -14,7 +15,11 @@ card.addEventListener('keypress',(event)=>{
         getWeatherReport(card.value);
         document.querySelector('.matter').style.display = "block";
     }
+});
 
+button.addEventListener('click', () => {
+    getWeatherReport(card.value);
+    document.querySelector('.matter').style.display = "block";
 });
 
 function getWeatherReport(city) 
